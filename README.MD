@@ -1,6 +1,7 @@
+PROD: www.khanduri.com
 
 ------------------------------
-# Local Dev (mac osx):
+# Local Dev (mac OSx):
 
 ## Setup
  - `virtualenv --no-site-packages venv`
@@ -45,9 +46,12 @@
 # PROD Push - Docker - Heroku:
 
 ## Setup
- - `heroku apps:create khanduri`
+ - `heroku apps:create khanduri --remote heroku-khanduri`
 
 ## Build
+ - `heroku container:push web --remote heroku-khanduri`
+ - `heroku logs --remote heroku-khanduri`
+
 
 ------------------------------
 # DEBUGGING tips:
