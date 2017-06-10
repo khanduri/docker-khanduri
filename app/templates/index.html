@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Home</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.0.2/css/hover-min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/css/main.css') }}" />
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <div id='navigation'></div>
+
+    <header id="header" class={{ class_name if class_name else "intro"}}></header>
+
+    <div id='about'></div>
+    <div id='learn'></div>
+    <div id='experience'></div>
+    <div id='education'></div>
+    <div id='activities'></div>
+    <div id='contact'></div>
+
+    <footer><div id='footer'></div></footer>
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-74737789-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.7/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.js"></script>
+
+    <script>
+      $(window).scroll(function() {
+        if ($(".navbar").offset().top > 50) {
+          $(".navbar-fixed-top").addClass("top-nav-collapse");
+        } else {
+          $(".navbar-fixed-top").removeClass("top-nav-collapse");
+        }
+      });
+
+      $('.navbar-collapse ul li a').click(function() {
+        $('.navbar-toggle:visible').click();
+      });
+
+    $(function() {
+      $('body').delegate('a.page-scroll', 'click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+          scrollTop: $($anchor.attr('href')).offset().top
+        }, 200);
+          event.preventDefault();
+        });
+      });
+    </script>
+
+    <script>
+    var info = {{ json_data|tojson }}
+    </script>
+    <script src="{{ url_for('static', filename='scripts/js/compiled/main.js') }}"></script>
+
+</body>
+</html>
