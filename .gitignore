@@ -1,3 +1,13 @@
+.DS_Store
+
+venv
+
+.idea/*
+
+node_modules/*
+
 app/static/styles/css
 app/static/scripts/js
 app/static/bower_components
+
+*.pyc
