@@ -1,4 +1,5 @@
 
+------------------------------
 # Local Dev (mac osx):
 
 ## Setup
@@ -15,6 +16,7 @@
  - `python app/__init__.py`
 
 
+------------------------------
 # Local Testing - Docker:
 
 ## Setup
@@ -25,12 +27,29 @@
  - `docker run -d --name khanduri-01 -p 5000:5000 docker-khanduri`
 
 
+------------------------------
 # Stage Push - Docker - Heroku:
 
+## Setup
+ - `heroku login`
+ - `heroku plugins:install heroku-container-registry`
+ - `heroku container:login`
+ - `heroku apps:create khanduri-staging --remote staging`
 
+## Build
+ - `heroku container:push web --remote staging`
+ - `heroku open`
+
+
+------------------------------
 # PROD Push - Docker - Heroku:
 
+## Setup
+ - `heroku apps:create khanduri`
 
+## Build
+
+------------------------------
 # DEBUGGING tips:
 
 ## TODO (clean these up):
@@ -39,4 +58,5 @@
  - `docker exec -ti khanduri-01 bash`
  - `lsof -i tcp:8000`
  - `rm -rf /Users/prashantkhanduri/Library/Containers/com.docker.docker/Data/*`
+ - `docker logs khanduri-01`
 
