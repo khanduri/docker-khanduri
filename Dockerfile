@@ -1,4 +1,4 @@
-FROM python
+FROM python:2.7
 
 RUN apt-get update -y
 RUN apt-get install nodejs-legacy npm -y
