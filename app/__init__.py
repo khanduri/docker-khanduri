@@ -38,7 +38,6 @@ FAMILY_NICKNAMES = {
 @app.route("/<alias>")
 def member(alias):
 
-    print "testing"
     app.logger.warning('start')
     for map_alias, nicknames in FAMILY_NICKNAMES.iteritems():
         if alias in nicknames:
