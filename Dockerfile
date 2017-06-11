@@ -16,4 +16,5 @@ RUN node_modules/gulp/bin/gulp.js transform
 
 EXPOSE 5000
 
-CMD gunicorn --bind 0.0.0.0:5000 wsgi
+# CMD gunicorn --bind 0.0.0.0:5000 wsgi
+CMD gunicorn --bind 0.0.0.0:$PORT wsgi

@@ -54,6 +54,23 @@ PROD: www.khanduri.com
 
 
 ------------------------------
+# PROD Push - Docker - AWS:
+
+## Setup
+ - `pip install awsebcli`
+ - `eb init`
+ - `vim .elasticbeanstalk/config.yml`
+ - `eb console`
+ - `eb create`
+
+## Build
+ - `eb deploy`
+ - `eb open`
+ - `eb ssh`
+ - `gunicorn --bind 0.0.0.0:5000 wsgi`
+
+
+------------------------------
 # DEBUGGING tips:
 
 ## TODO (clean these up):
@@ -63,6 +80,5 @@ PROD: www.khanduri.com
  - `lsof -i tcp:8000`
  - `rm -rf /Users/prashantkhanduri/Library/Containers/com.docker.docker/Data/*`
  - `docker logs khanduri-01`
-
  - `docker exec -ti khanduri-01 bash`
- - `gunicorn --bind 0.0.0.0:5000 wsgi`
+
