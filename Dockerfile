@@ -14,4 +14,6 @@ RUN npm install
 RUN node_modules/gulp/bin/gulp.js sass
 RUN node_modules/gulp/bin/gulp.js transform
 
-CMD gunicorn --bind 0.0.0.0:$PORT wsgi
+EXPOSE 5000
+
+CMD gunicorn --bind 0.0.0.0:5000 wsgi
