@@ -11,3 +11,4 @@ app/static/scripts/js
 app/static/bower_components
 
 *.pyc
+*.log

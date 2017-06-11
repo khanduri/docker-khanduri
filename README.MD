@@ -64,3 +64,5 @@ PROD: www.khanduri.com
  - `rm -rf /Users/prashantkhanduri/Library/Containers/com.docker.docker/Data/*`
  - `docker logs khanduri-01`
 
+ - `docker exec -ti khanduri-01 bash`
+ - `gunicorn --bind 0.0.0.0:5000 wsgi`

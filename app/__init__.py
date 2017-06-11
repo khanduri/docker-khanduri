@@ -1,8 +1,13 @@
 import json
 from flask import Flask, render_template
+import logging
+from logging.handlers import RotatingFileHandler
 
 
 app = Flask(__name__)
+handler = RotatingFileHandler('foo.log', maxBytes=10000, backupCount=1)
+handler.setLevel(logging.INFO)
+app.logger.addHandler(handler)
 
 
 @app.route("/home")
@@ -33,16 +38,22 @@ FAMILY_NICKNAMES = {
 @app.route("/<alias>")
 def member(alias):
 
+    print "testing"
+    app.logger.warning('start')
     for map_alias, nicknames in FAMILY_NICKNAMES.iteritems():
         if alias in nicknames:
             alias = map_alias
             break
 
     data_file_path, class_name = FILE_MAP.get(alias, (None, None))
+    app.logger.warning(data_file_path)
     if not data_file_path:
         return render_template('error.html')
 
     json_data = json.loads(open(data_file_path).read())
+    app.logger.warning(json_data)
+    app.logger.warning('end')
+
     return render_template('index.html', json_data=json_data, class_name=class_name)
 
 
@@ -55,7 +66,3 @@ def index():
 @app.errorhandler(404)
 def not_found(error):
     return render_template('error.html'), 404
-
-
-if __name__ == "__main__":
-    app.run(host="0.0.0.0")
