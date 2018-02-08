@@ -21,7 +21,7 @@ PROD: www.khanduri.com
 # Local Testing - Docker:
 
 ## Setup
- - Make sure to have docker installed
+ - `brew install docker`
 
 ## Build
  - `docker build -t docker-khanduri .`
