@@ -82,3 +82,11 @@ PROD: www.khanduri.com
  - `docker logs khanduri-01`
  - `docker exec -ti khanduri-01 bash`
 
+ - `sudo npm install -g yarn`
+ - `brew install yarn`
+ - `yarn init --yes`
+ - `yarn add --dev webpack babel-core babel-loader babel-preset-react babel-preset-es2015 node-sass css-loader sass-loader style-loader`
+ - `yarn add react react-dom`
+ - `yarn add --dev url-loader file-loader`
+ - `yarn run build-dev .`
+ - `npm install extract-text-webpack-plugin --save-dev`

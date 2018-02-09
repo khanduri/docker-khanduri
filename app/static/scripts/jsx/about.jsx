@@ -21,6 +21,11 @@ var AboutPrashantComponent = React.createClass({
   }
 });
 
+
 if (info.about == 'prashant'){
-  React.render(<AboutPrashantComponent />, document.getElementById('about'));
+  ReactDOM.render(
+    <AboutPrashantComponent />,
+    document.getElementById('about')
+  );
 }
+
