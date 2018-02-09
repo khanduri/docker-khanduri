@@ -1,4 +1,4 @@
-
+import ReactDOM from 'react-dom';
 
 /* Navigation */
 var NavigationComponent = React.createClass({
@@ -7,9 +7,9 @@ var NavigationComponent = React.createClass({
     var navigation = this.props.items;
 
     var rows = [];
-    navigation.map(function(section){
+    navigation.map(function(section, i){
       if (section != 'profile'){
-        rows.push(<li><a className="page-scroll" href={"#"+section}>{section}</a></li>);
+        rows.push(<li key={'navigation_'+i}><a className="page-scroll" href={"#"+section}>{section}</a></li>);
       }
     });
 
@@ -37,5 +37,5 @@ var NavigationComponent = React.createClass({
   }
 });
 if (info.navigation){
-  React.render(<NavigationComponent items={info.navigation} />, document.getElementById('navigation'));
+  ReactDOM.render(<NavigationComponent items={info.navigation} />, document.getElementById('navigation'));
 }

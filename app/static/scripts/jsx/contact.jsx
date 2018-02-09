@@ -1,3 +1,4 @@
+import ReactDOM from 'react-dom';
 
 /* Contact */
 
@@ -25,5 +26,5 @@ var ContactComponent = React.createClass({
 });
 
 if (info.contact){
-  React.render(<ContactComponent items={info.contact}/>, document.getElementById('contact'));
+  ReactDOM.render(<ContactComponent items={info.contact}/>, document.getElementById('contact'));
 }

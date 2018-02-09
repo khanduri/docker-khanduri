@@ -1,3 +1,4 @@
+import ReactDOM from 'react-dom';
 
 /* Learn */
 
@@ -7,14 +8,14 @@ var ProgressDisplayComponent = React.createClass({
     var current = this.props.items;
 
    return (
-      <div className="row">
+      <div className="row" key={this.props.key}>
         <h2 className="text-center">{title}</h2>
         <div className="row">
-            { Object.keys(current).map(function(category){
+            { Object.keys(current).map(function(category, i){
               return (
-                <div className="col-md-4"><div className="middle">{category.toUpperCase()}</div><br/>
-                  {current[category].sort(function(a, b){ return -(a[1] - b[1]); }).map(function(topic){
-                    return (<div className="progress"><div className={"progress-bar prog-"+topic[1]}>{topic[0]}</div></div>)
+                <div key={'category_'+i} className="col-md-4"><div className="middle">{category.toUpperCase()}</div><br/>
+                  {current[category].sort(function(a, b){ return -(a[1] - b[1]); }).map(function(topic, i){
+                    return (<div key={'progress_'+i} className="progress"><div className={"progress-bar prog-"+topic[1]}>{topic[0]}</div></div>)
                   })}
                 </div>
               )
@@ -31,10 +32,10 @@ var LearnComponent = React.createClass({
     var rows = [];
 
     var current = this.props.items.current;
-    rows.push(<ProgressDisplayComponent items={current} title={"Current interest"}/>);
+    rows.push(<ProgressDisplayComponent key={"current_interest"} items={current} title={"Current interest"}/>);
 
     var past = this.props.items.past;
-    rows.push(<ProgressDisplayComponent items={past} title={"In the Past"}/>);
+    rows.push(<ProgressDisplayComponent key={'past_interest'} items={past} title={"In the Past"}/>);
 
 
     return (
@@ -52,5 +53,5 @@ var LearnComponent = React.createClass({
 });
 
 if (info.learn){
-  React.render(<LearnComponent items={info.learn}/>, document.getElementById('learn'));
+  ReactDOM.render(<LearnComponent items={info.learn}/>, document.getElementById('learn'));
 }

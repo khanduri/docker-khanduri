@@ -1,3 +1,4 @@
+import ReactDOM from 'react-dom';
 
 
 var HeaderComponent = React.createClass({
@@ -32,6 +33,6 @@ var FooterComponent = React.createClass({
   }
 });
 if (info.profile){
-  React.render(<HeaderComponent items={info.profile} />, document.getElementById('header'));
-  React.render(<FooterComponent items={info.profile} />, document.getElementById('footer'));
+  ReactDOM.render(<HeaderComponent items={info.profile} />, document.getElementById('header'));
+  ReactDOM.render(<FooterComponent items={info.profile} />, document.getElementById('footer'));
 }

@@ -1,15 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-/*
-import './jsx/navigation';
-import './jsx/profile';
-import './jsx/projects';
-import './jsx/about';
-import './jsx/contact';
-import './jsx/education';
-import './jsx/experience';
-import './jsx/learn';
-*/
+
+import AboutPrashantComponent from './jsx/about';
+import ContactComponent from './jsx/contact'
+import NavigationComponent from './jsx/navigation';
+import HeaderComponent from './jsx/profile';
+import FooterComponent from './jsx/profile';
+import ActivitiesComponent from './jsx/projects';
+import EducationComponent from './jsx/education';
+import ExperienceComponent from './jsx/experience';
+import LearnComponent from './jsx/learn';
+
 
 import './scss/main.scss';

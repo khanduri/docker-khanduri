@@ -1,3 +1,4 @@
+import ReactDOM from 'react-dom';
 
 /* Experience */
 
@@ -6,7 +7,7 @@ var ExperienceDutyDisplayComponent = React.createClass({
   render: function(){
     var duty = this.props.items;
     return (
-      <div> - { duty }</div>
+      <div key={this.props.key}> - { duty }</div>
     )
   }
 });
@@ -17,12 +18,12 @@ var ExperienceContentDisplayComponent = React.createClass({
     var content = this.props.items;
 
     var rows = [];
-    content.duties.map(function(duty){
-      rows.push(<ExperienceDutyDisplayComponent items={duty} />)
+    content.duties.map(function(duty, i){
+      rows.push(<ExperienceDutyDisplayComponent items={duty} key={'duty_' + i}/>)
     });
 
     return (
-      <div className="timeline-body">
+      <div className="timeline-body" key={this.props.key}>
         <br/>
         <div>
         <b>{ content.team_name }:</b>
@@ -39,12 +40,12 @@ var ExperienceDisplayComponent = React.createClass({
     var work = this.props.items;
 
     var rows = [];
-    work.body.map(function(content){
-      rows.push(<ExperienceContentDisplayComponent items={content} />);
+    work.body.map(function(content, i){
+      rows.push(<ExperienceContentDisplayComponent items={content} key={'content_' + i}/>);
     });
 
    return (
-      <li className="timeline-inverted">
+      <li className="timeline-inverted" key={this.props.key}>
         <div className="timeline-badge"><i className={"fa " + work.fa_class }></i></div>
         <div className="timeline-panel">
           <div className="timeline-heading">
@@ -69,8 +70,8 @@ var ExperienceComponent = React.createClass({
     var rows = [];
 
     var experiences = this.props.items;
-    experiences.map(function(experience){
-      rows.push(<ExperienceDisplayComponent items={experience} />);
+    experiences.map(function(experience, i){
+      rows.push(<ExperienceDisplayComponent items={experience} key={'experience_' + i} />);
     });
 
     return (
@@ -95,5 +96,5 @@ var ExperienceComponent = React.createClass({
 });
 
 if (info.experience){
-  React.render(<ExperienceComponent items={info.experience} />, document.getElementById('experience'));
+  ReactDOM.render(<ExperienceComponent items={info.experience} />, document.getElementById('experience'));
 }

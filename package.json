@@ -1,13 +1,12 @@
 {
   "name": "docker-khanduri",
   "version": "1.0.0",
-  "main": "index.js",
   "repository": "git@github.com:khanduri/docker-khanduri.git",
   "author": "Prashant Khanduri <prashant.khanduri@gmail.com>",
-  "license": "MIT",
   "scripts": {
     "build": "webpack -p --progress",
-    "build-dev": "webpack --progress --profile --colors --display-error-details --display-cached",
+    "build-dev": "webpack --progress --profile --colors --display-error-details --display-cached --verbose -d",
+    "watch": "webpack --progress -d --config webpack.config.js --watch",
     "dev": "webpack-dev-server --inline --hot"
   },
   "devDependencies": {

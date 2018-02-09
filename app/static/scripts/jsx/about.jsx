@@ -1,3 +1,4 @@
+import ReactDOM from 'react-dom';
 
 /* About */
 var AboutPrashantComponent = React.createClass({
@@ -13,7 +14,7 @@ var AboutPrashantComponent = React.createClass({
               <p>I also <a href="http://khanduri.github.io/">blog</a>, but I haven't really scoped out the topics I'd like to talk about. For now, I'm just using it to collect ideas that I find interesting. I hope someday a pattern will emerge</p>
               <p></p>
               <p>In case you're wondering, the above picture is me trying to slide down Mt Rainier (Paradise snowplay area) and not doing a great job at it. I like the picture though</p>
-              <p>You know a lot about me now! .. <a href='#contact' class="page-scroll">Ok your turn</a></p>
+              <p>You know a lot about me now! .. <a href='#contact' className="page-scroll">Ok your turn</a></p>
             </div>
           </div>
         </section>

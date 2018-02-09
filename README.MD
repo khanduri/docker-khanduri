@@ -90,3 +90,5 @@ PROD: www.khanduri.com
  - `yarn add --dev url-loader file-loader`
  - `yarn run build-dev .`
  - `npm install extract-text-webpack-plugin --save-dev`
+ - `python app/__init__.py`
+ - `yarn run watch .`

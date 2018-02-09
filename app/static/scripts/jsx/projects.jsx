@@ -1,3 +1,4 @@
+import ReactDOM from 'react-dom';
 
 /* Activities */
 
@@ -13,16 +14,16 @@ var ActivitiesComponent = React.createClass({
               <h2 className="text-center">Activities</h2>
 
                 <div className="row">
-                  { Object.keys(activities).map(function(category){
+                  { Object.keys(activities).map(function(category, i){
                     return (
-                      <div className="col-md-4"><div className="middle">{category.toUpperCase()}</div><br/>
-                        {activities[category].map(function(task){
+                      <div key={"activity_"+i} className="col-md-4"><div className="middle">{category.toUpperCase()}</div><br/>
+                        {activities[category].map(function(task, i){
                           var link = task.link;
                           var name = task.name;
                           if (link){
-                            return <div className="well"><a href={""+link}>{name}</a></div>
+                            return <div key={"activity_task_" + i} className="well"><a href={""+link}>{name}</a></div>
                           } else {
-                            return <div className="well">{name}</div>
+                            return <div key={"activity_task_" + i} className="well">{name}</div>
                           }
                         })}
                       </div>
@@ -37,6 +38,8 @@ var ActivitiesComponent = React.createClass({
     )
   }
 });
+
+
 if (info.activities){
-  React.render(<ActivitiesComponent items={info.activities}/>, document.getElementById('activities'));
+  ReactDOM.render(<ActivitiesComponent items={info.activities}/>, document.getElementById('activities'));
 }
