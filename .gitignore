@@ -9,6 +9,7 @@ node_modules/*
 app/static/styles/css
 app/static/scripts/js
 app/static/bower_components
+app/static/dist
 
 *.pyc
 *.log
@@ -17,3 +18,4 @@ app/static/bower_components
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
+
