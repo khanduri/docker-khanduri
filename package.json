@@ -1,6 +1,7 @@
 {
   "name": "docker-khanduri",
   "version": "1.0.0",
+  "license" : "MIT",
   "repository": "git@github.com:khanduri/docker-khanduri.git",
   "author": "Prashant Khanduri <prashant.khanduri@gmail.com>",
   "scripts": {

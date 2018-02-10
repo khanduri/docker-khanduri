@@ -1,20 +1,20 @@
-FROM python:2.7
+FROM alpine:3.7
 
-RUN apt-get update -y
-RUN apt-get install nodejs-legacy npm -y
 
-ADD https://api.github.com/repos/khanduri/docker-khanduri/git/refs/heads/master .github_version.json
-RUN git clone -bmaster https://github.com/khanduri/docker-khanduri.git /code
+RUN apk add --no-cache python python-dev py-pip
+RUN apk add --no-cache yarn
 
+
+COPY . /code
 WORKDIR /code
 RUN pip install -r requirements.txt
-RUN npm install -g bower
-RUN bower install --allow-root
-RUN npm install
-RUN node_modules/gulp/bin/gulp.js sass
-RUN node_modules/gulp/bin/gulp.js transform
+RUN yarn install
+RUN yarn run build .
 
+
+WORKDIR /code
 EXPOSE 5000
 
-# CMD gunicorn --bind 0.0.0.0:5000 wsgi
-CMD gunicorn --bind 0.0.0.0:$PORT wsgi
+
+CMD gunicorn --bind 0.0.0.0:5000 wsgi
+# CMD gunicorn --bind 0.0.0.0:$PORT wsgi

@@ -22,11 +22,16 @@ var ExperienceContentDisplayComponent = React.createClass({
       rows.push(<ExperienceDutyDisplayComponent items={duty} key={'duty_' + i}/>)
     });
 
+    var team_name = "";
+    if (content.team_name){ 
+      team_name = <span>{content.team_name } :</span>;
+    }
+
     return (
       <div className="timeline-body" key={this.props.key}>
         <br/>
         <div>
-        <b>{ content.team_name }:</b>
+        { team_name }
         </div>
         { content.team_desc }
         { rows }
@@ -52,7 +57,7 @@ var ExperienceDisplayComponent = React.createClass({
             <h6 className="timeline-title"><a href={work.link}>{ work.title }</a></h6>
             <div className="timeline-location">{ work.loc }</div>
             <div className="timeline-dates">{ work.dates }</div>
-            <div className="timeline-position">{ work.position }</div>
+            <div className="timeline-position"><b>{ work.position }</b></div>
 
             { rows }
 

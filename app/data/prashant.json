@@ -151,6 +151,7 @@
       "institutes":[
          {
             "title":"University of Southern California",
+            "link": "https://viterbischool.usc.edu/",
             "loc":"Los Angeles, CA",
             "course":"Masters in Computer Science",
             "desc":"Specialization in Human Language technology (Applied Artificial Intelligence)",
@@ -158,6 +159,7 @@
          },
          {
             "title":"University of Waterloo",
+            "link": "https://uwaterloo.ca/electrical-computer-engineering/",
             "loc":"Ontario, Canada",
             "course":"Bachelor in Applied Science – Computer Engineering (Honors)",
             "desc":"Option in Software Engineering",
@@ -175,7 +177,6 @@
          "position":"Co-Founder / CTO",
          "body":[
             {
-               "team_name":"Startup",
                "team_desc":"An open source tool that allows developers to catch bugs before they are pushed to production",
                "duties":[
                   "More detail coming soon ..."
@@ -195,7 +196,7 @@
                "team_name":"Platform team",
                "team_desc":"The team is responsible for building our own proprietary financial platform, as well as our real-time high-throughput data processing pipeline",
                "duties":[
-                  "Build and maintain the underwriting pipeline for various product flows",
+                  "Build and maintain the underwriting pipeline for all product flows",
                   "Architect the offline infrastructure to be used by Data Science for iterating and improving credit and fraud models"
                ]
             }
@@ -225,7 +226,7 @@
          "link": "https://hearsaysystems.com/",
          "loc":"San Fransisco, CA",
          "dates":"2012 - 2014",
-         "position":"Programmer",
+         "position":"Full stack developer",
          "body":[
             {
                "team_name":"Engagement team",
@@ -243,7 +244,7 @@
          "link": "https://www.bing.com",
          "loc":"Seattle, WA",
          "dates":"2009 - 2012",
-         "position":"Software Developer",
+         "position":"SDE II",
          "body":[
             {
                "team_name":"Bing - Relevance",

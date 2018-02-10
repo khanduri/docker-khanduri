@@ -312,6 +312,12 @@ body {
   height: 100%
 }
 
+.btn-circle:hover {
+  color: $grayscale-primary;
+  border: 2px solid $grayscale-primary;
+  background: $grayscale-badge-02;
+}
+
 .progress { color: $grayscale-primary }
 .prog-00 { width: 00%; }
 .prog-10 { width: 10%; }

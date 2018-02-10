@@ -89,3 +89,7 @@ PROD: www.khanduri.com
  - `docker logs khanduri-01`
  - `docker exec -ti khanduri-01 bash`
 
+ - `docker ps -a`
+ - `docker rm khanduri-01`
+ - `docker rm khanduri-01`
+ - `docker stop khanduri-01`

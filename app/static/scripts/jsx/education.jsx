@@ -11,7 +11,7 @@ var EducationDisplayComponent = React.createClass({
         <div className="timeline-badge"><i className="fa fa-graduation-cap"></i></div>
         <div className="timeline-panel">
           <div className="timeline-heading">
-            <div className="timeline-title">{ institute.title }</div>
+            <div className="timeline-title"><a href={institute.link}>{ institute.title }</a></div>
             <div className="timeline-dates">{ institute.dates }</div>
             <div className="timeline-location">{ institute.loc }</div>
             <br/>
