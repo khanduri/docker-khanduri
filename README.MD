@@ -7,14 +7,21 @@ PROD: www.khanduri.com
  - `virtualenv --no-site-packages venv`
  - `source venv/bin/activate`
  - `pip install -r requirements.txt`
- - `brew install node`
- - `npm install`
- - `npm install -g bower`
+ - `brew install yarn`
+ - `yarn init --yes`
+ - `yarn add --dev webpack babel-core babel-loader babel-preset-react babel-preset-es2015`
+ - `yarn add --dev node-sass css-loader sass-loader style-loader`
+ - `yarn add --dev url-loader file-loader`
+ - `yarn add react react-dom`
+ - `npm install extract-text-webpack-plugin --save-dev`
 
 ## Build
- - `bower install`
- - `gulp build`
- - `python app/__init__.py`
+ - Local
+    - `yarn run watch .`
+    - `python app/__init__.py`
+ - Production
+    - `yarn run build .`
+    - `python app/__init__.py`
 
 
 ------------------------------
@@ -82,13 +89,3 @@ PROD: www.khanduri.com
  - `docker logs khanduri-01`
  - `docker exec -ti khanduri-01 bash`
 
- - `sudo npm install -g yarn`
- - `brew install yarn`
- - `yarn init --yes`
- - `yarn add --dev webpack babel-core babel-loader babel-preset-react babel-preset-es2015 node-sass css-loader sass-loader style-loader`
- - `yarn add react react-dom`
- - `yarn add --dev url-loader file-loader`
- - `yarn run build-dev .`
- - `npm install extract-text-webpack-plugin --save-dev`
- - `python app/__init__.py`
- - `yarn run watch .`
