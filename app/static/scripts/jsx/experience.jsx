@@ -49,7 +49,7 @@ var ExperienceDisplayComponent = React.createClass({
         <div className="timeline-badge"><i className={"fa " + work.fa_class }></i></div>
         <div className="timeline-panel">
           <div className="timeline-heading">
-            <h4 className="timeline-title">{ work.title }</h4>
+            <h6 className="timeline-title"><a href={work.link}>{ work.title }</a></h6>
             <div className="timeline-location">{ work.loc }</div>
             <div className="timeline-dates">{ work.dates }</div>
             <div className="timeline-position">{ work.position }</div>

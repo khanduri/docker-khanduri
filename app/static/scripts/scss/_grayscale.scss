@@ -41,7 +41,7 @@ a {
   &:hover,
   &:focus {
     text-decoration: none;
-    color: darken($grayscale-primary,0.2);
+    color: darken($grayscale-primary,0.5);
   }
 }
 
@@ -97,7 +97,7 @@ a {
         &:focus,
         &.active {
           outline: none;
-          background-color: transparentize($grayscale-light, 0.7);
+          background-color: darken($grayscale-light, 0.5);
         }
       }
     }
@@ -324,7 +324,6 @@ body {
 .prog-80 { width: 80%; }
 .prog-90 { width: 90%; }
 .prog-100 { width: 100%; }
-
 
 
 .timeline {

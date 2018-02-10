@@ -7,21 +7,22 @@
       "current":{
          "languages":[
             [ "python", 90 ],
-            [ "javascript", 80 ]
+            [ "javascript", 80 ],
+            [ "scala", 70 ]
          ],
          "tools":[
-            [ "vim", 80 ],
+            [ "vim", 90 ],
             [ "shell-scripting", 90 ]
          ],
          "frameworks":[
-            [ "react", 40 ],
-            [ "react native", 40 ],
+            [ "react", 60 ],
+            [ "react native", 60 ],
             [ "flask", 80 ]
          ]
       },
       "past":{
          "languages":[
-            [ "C#", 60 ],
+            [ "C#", 70 ],
             [ "Java ", 70 ],
             [ "PHP", 50 ],
             [ "Perl", 40 ],
@@ -36,7 +37,7 @@
          ],
          "frameworks":[
             [ "django", 80 ],
-            [ "jquery", 70 ],
+            [ "webpack", 70 ],
             [ "angular", 60 ],
             [ "yeoman", 60 ],
             [ "code-igniter", 50 ],
@@ -59,38 +60,47 @@
       "projects":[
          {
             "name":"Pulsico: Set future reminders",
+            "keywords": ["python", "flask", "heroku"],
             "link":"http://pulsico.herokuapp.com/"
          },
          {
             "name":"Portfolio Generator: This site",
-            "link":"https://github.com/khanduri/portfolio-react"
+            "keywords": ["python", "react", "docker", "webpack", "aws"],
+            "link":"https://github.com/khanduri/docker-khanduri"
          },
          {
             "name":"AuroFit: Plan your Workout",
+            "keywords": ["health tech", "python", "react native"],
             "link":"https://workoutgen-stage.herokuapp.com/"
          },
          {
-            "name":"Color.js",
-            "link":"https://github.com/khanduri/color.js"
-         },
-         {
             "name":"EZ Apps: iOS apps",
+            "keywords": ["mobile", "objective-c", "consumer apps"],
             "link":"http://ezapps.herokuapp.com/"
          },
          {
+            "name":"Color.js",
+            "keywords": [],
+            "link":"https://github.com/khanduri/color.js"
+         },
+         {
             "name":"Structure extractor: Craigslist",
+            "keywords": [],
             "link":""
          },
          {
             "name":"Transliteration: En to Hi",
+            "keywords": [],
             "link":""
          },
          {
             "name":"Emotion Recognition: Aritificial Neural Networks",
+            "keywords": [],
             "link":""
          },
          {
             "name":"Sudoku Solver: CSP",
+            "keywords": [],
             "link":""
          }
       ],
@@ -118,11 +128,11 @@
             "link":"http://www.mapmyrun.com/profile/83707647/"
          },
          {
-            "name":"Tennis / Racquet ball enthusiast",
-            "link":""
+            "name":"Guitar newbie",
+            "link":"https://github.com/khanduri/guitar"
          },
          {
-            "name":"Playing any outdoor sport",
+            "name":"Tennis / Racquet ball enthusiast",
             "link":""
          },
          {
@@ -157,25 +167,44 @@
    },
    "experience":[
       {
-         "fa_class":"fa-spin fa-credit-card",
-         "title":"Affirm",
+         "fa_class":"fa-spin fa-th-large",
+         "title":"Diffy",
+         "link": "https://github.com/twitter/diffy",
          "loc":"San Fransisco, CA",
-         "dates":"2015 - current",
-         "position":"Software Engineer",
+         "dates":"2018 - current",
+         "position":"Co-Founder / CTO",
          "body":[
             {
-               "team_name":"Platform team",
-               "team_desc":"The team is responsible for building our own proprietary financial platform, as well as our real-time high-throughput data processing pipeline",
+               "team_name":"Startup",
+               "team_desc":"An open source tool that allows developers to catch bugs before they are pushed to production",
                "duties":[
-                  "Build and maintain the bank authentication pipeline for pulling in account infromation",
-                  "Setting up dashboards for monitoring and alerting over bank auth pipeline"
+                  "More detail coming soon ..."
                ]
             }
          ]
       },
       {
-         "fa_class":"fa-circle-o-notch",
+         "fa_class":"fa-credit-card",
+         "title":"Affirm",
+         "link": "https://www.affirm.com/",
+         "loc":"San Fransisco, CA",
+         "dates":"2015 - 2018",
+         "position":"Engineering Manager / Staff Engineer",
+         "body":[
+            {
+               "team_name":"Platform team",
+               "team_desc":"The team is responsible for building our own proprietary financial platform, as well as our real-time high-throughput data processing pipeline",
+               "duties":[
+                  "Build and maintain the underwriting pipeline for various product flows",
+                  "Architect the offline infrastructure to be used by Data Science for iterating and improving credit and fraud models"
+               ]
+            }
+         ]
+      },
+      {
+         "fa_class":"fa-heartbeat",
          "title":"Jawbone",
+         "link": "https://jawbone.com/",
          "loc":"San Fransisco, CA",
          "dates":"2014 - 2015",
          "position":"Senior Software Engineer",
@@ -193,6 +222,7 @@
       {
          "fa_class":"fa-comment-o",
          "title":"Hearsay Social",
+         "link": "https://hearsaysystems.com/",
          "loc":"San Fransisco, CA",
          "dates":"2012 - 2014",
          "position":"Programmer",
@@ -210,6 +240,7 @@
       {
          "fa_class":"fa-windows",
          "title":"Microsoft Inc",
+         "link": "https://www.bing.com",
          "loc":"Seattle, WA",
          "dates":"2009 - 2012",
          "position":"Software Developer",
