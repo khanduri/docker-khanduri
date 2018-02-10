@@ -93,10 +93,12 @@ a {
         -webkit-transition: background .3s ease-in-out;
         -moz-transition: background .3s ease-in-out;
         transition: background .3s ease-in-out;
+        color: $grayscale-primary;
         &:hover,
         &:focus,
         &.active {
           outline: none;
+          color: $grayscale-progress;
           background-color: darken($grayscale-light, 0.5);
         }
       }
@@ -405,7 +407,7 @@ body {
   position: absolute;
   top: 16px;
   margin-left: -25px;
-  background-color: $grayscale-badge;
+  background-color: $grayscale-badge-06;
   z-index: 100;
   border-radius: 50%;
 }
@@ -420,4 +422,8 @@ body {
   border-right-width: 14px;
   left: -14px;
   right: auto;
+}
+
+#contact {
+  background: linear-gradient(to right, $grayscale-progress, $grayscale-badge-03);
 }

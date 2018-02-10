@@ -39,7 +39,7 @@ var LearnComponent = React.createClass({
 
 
     return (
-      <section id="learn" className="content-section">
+      <section className="content-section learn">
         <div className="content-section learn-section">
           <div className="row">
             <div className="col-lg-8 col-lg-offset-2">

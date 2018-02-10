@@ -80,7 +80,7 @@ var ExperienceComponent = React.createClass({
     });
 
     return (
-      <section id="experience" className="">
+      <section className="experience">
         <div className="content-section experience-section">
           <div className="row">
             <div className="col-lg-8 col-lg-offset-2">

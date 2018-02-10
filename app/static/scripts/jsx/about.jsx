@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 var AboutPrashantComponent = React.createClass({
   render: function(){
     return (
-        <section id="about" className="content-section text-center">
+        <section className="content-section text-center about">
           <div className="row">
             <div className="col-lg-8 col-lg-offset-2">
               <h2>About Me</h2>

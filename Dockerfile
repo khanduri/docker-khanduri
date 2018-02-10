@@ -16,5 +16,5 @@ WORKDIR /code
 EXPOSE 5000
 
 
-CMD gunicorn --bind 0.0.0.0:5000 wsgi
-# CMD gunicorn --bind 0.0.0.0:$PORT wsgi
+# $PORT is set by Heroku
+CMD gunicorn --bind 0.0.0.0:$PORT wsgi

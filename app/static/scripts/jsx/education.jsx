@@ -35,7 +35,7 @@ var EducationComponent = React.createClass({
     });
 
     return (
-      <section id="education" className="">
+      <section className="education">
         <div className="content-section education-section">
           <div className="row">
             <div className="col-lg-8 col-lg-offset-2">

@@ -32,7 +32,7 @@ PROD: www.khanduri.com
 
 ## Build
  - `docker build -t docker-khanduri .`
- - `docker run -d --name khanduri-01 -p 5000:5000 docker-khanduri`
+ - `docker run -d --name khanduri-01 -p 5000:5000 -e PORT=5000 docker-khanduri`
 
 
 ------------------------------
@@ -40,12 +40,14 @@ PROD: www.khanduri.com
 
 ## Setup
  - `heroku login`
- - `heroku plugins:install heroku-container-registry`
+ - `heroku plugins:install heroku-container-registry`              # run once globally
  - `heroku container:login`
- - `heroku apps:create khanduri-staging --remote staging`
+ - `heroku apps:create khanduri-staging --remote heroku-staging`   # Creating a new app and adding remote
+ - `heroku git:remote -a heroku-staging`                           # Adding remote repo for heroku stating
+ - `git remote rename heroku heroku-staging`
 
 ## Build
- - `heroku container:push web --remote staging`
+ - `heroku container:push web --remote heroku-staging`
  - `heroku open`
 
 
@@ -53,11 +55,12 @@ PROD: www.khanduri.com
 # PROD Push - Docker - Heroku:
 
 ## Setup
- - `heroku apps:create khanduri --remote heroku-khanduri`
+ - `heroku apps:create khanduri --remote heroku-prod`
+ - `heroku git:remote -a heroku-prod`
 
 ## Build
- - `heroku container:push web --remote heroku-khanduri`
- - `heroku logs --remote heroku-khanduri`
+ - `heroku container:push web --remote heroku-prod`
+ - `heroku logs --remote heroku-prod`
 
 
 ------------------------------
@@ -90,6 +93,5 @@ PROD: www.khanduri.com
  - `docker exec -ti khanduri-01 bash`
 
  - `docker ps -a`
- - `docker rm khanduri-01`
  - `docker rm khanduri-01`
  - `docker stop khanduri-01`

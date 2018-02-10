@@ -7,7 +7,7 @@ var ActivitiesComponent = React.createClass({
     var activities = this.props.items;
 
     return (
-      <section id="projects" className="">
+      <section className="projects">
         <div className="content-section projects-section">
           <div className="row">
             <div className="col-lg-8 col-lg-offset-2">

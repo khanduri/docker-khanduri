@@ -8,7 +8,7 @@ var ContactComponent = React.createClass({
     var contact = this.props.items;
 
     return (
-      <section id="contact" className="container content-section text-center">
+      <section className="container content-section text-center contact">
         <div className="row">
           <div className="col-lg-8 col-lg-offset-2">
             <h2>Contact</h2>
