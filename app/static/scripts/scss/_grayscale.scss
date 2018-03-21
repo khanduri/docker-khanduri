@@ -93,7 +93,7 @@ a {
         -webkit-transition: background .3s ease-in-out;
         -moz-transition: background .3s ease-in-out;
         transition: background .3s ease-in-out;
-        color: $grayscale-primary;
+        color: $grayscale-nav;
         &:hover,
         &:focus,
         &.active {
@@ -143,7 +143,6 @@ a {
   height: auto;
   padding: 100px 0;
   text-align: center;
-  color: $grayscale-intro;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -151,12 +150,15 @@ a {
   .intro-body {
     display: table-cell;
     vertical-align: middle;
+
     .brand-heading {
       font-size: 40px;
+      color: $grayscale-heading;
     }
 
     .intro-text {
       font-size: 18px;
+      color: $grayscale-intro;
     }
   }
 }
@@ -317,7 +319,7 @@ body {
 .btn-circle:hover {
   color: $grayscale-primary;
   border: 2px solid $grayscale-primary;
-  background: $grayscale-badge-02;
+  background: $grayscale-badge-03;
 }
 
 .progress { color: $grayscale-primary }
@@ -333,6 +335,17 @@ body {
 .prog-90 { width: 90%; }
 .prog-100 { width: 100%; }
 
+.overlay:before {
+  position: absolute;
+  content:" ";
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  display: block;
+  z-index:0;
+  background-color: $grayscale-badge-01;
+}
 
 .timeline {
 
@@ -425,5 +438,5 @@ body {
 }
 
 #contact {
-  background: linear-gradient(to right, $grayscale-progress, $grayscale-badge-03);
+  background: linear-gradient(to right, $grayscale-badge-03, $grayscale-badge-01);
 }

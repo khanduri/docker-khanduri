@@ -13,6 +13,7 @@ app/static/dist
 
 *.pyc
 *.log
+*.log.*
 
 # Elastic Beanstalk Files
 .elasticbeanstalk/*

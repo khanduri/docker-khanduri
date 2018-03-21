@@ -1,11 +1,208 @@
 {
+   "navigation": [
+      "about", "learn", "experience", "education", "activities", "contact"
+   ],
+   "about": "puneet",
+   "learn":{
+      "current":{
+         "languages":[
+            [ "python", 90 ],
+            [ "javascript", 80 ],
+            [ "scala", 90 ]
+         ],
+         "tools":[
+            [ "vim", 90 ],
+            [ "shell-scripting", 90 ],
+            [ "IntelliJ", 90 ]
+         ],
+         "frameworks":[
+            [ "react", 60 ],
+            [ "play", 80 ]
+         ]
+      },
+      "past":{
+         "languages":[
+            [ "C / C++", 70 ],
+            [ "Java ", 70 ],
+            [ "objective-c", 70 ]
+         ],
+         "tools":[
+            [ "eclipse", 60 ],
+            [ "x-code", 60 ]
+         ],
+         "frameworks":[
+            [ "code-igniter", 50 ],
+            [ "cake-php", 40 ]
+         ]
+      }
+   },
    "profile":{
       "name":{
-         "first":"Puneet",
-         "last":"Khanduri"
+         "first": "Puneet",
+         "last": "Khanduri"
       },
       "desc":{
-         "first":"Details coming soon"
+         "first": "Entrepreneur - Polyglot Programmer - Yoga Enthusiast",
+         "second": "Currently in San Francisco, CA"
       }
-   }
+   },
+   "activities":{
+      "projects":[
+         {
+            "name":"Pulsico: Set future reminders",
+            "keywords": ["python", "flask", "heroku"],
+            "link":"http://pulsico.herokuapp.com/"
+         },
+         {
+            "name":"EZ Apps: iOS apps",
+            "keywords": ["mobile", "objective-c", "consumer apps"],
+            "link":"http://ezapps.herokuapp.com/"
+         }
+      ],
+      "groups":[
+         {
+            "name":"Asha for Education",
+            "link":""
+         },
+         {
+            "name":"Ekal Vidyalaya",
+            "link":""
+         },
+         {
+            "name":"Engineering Exploration Volunteer",
+            "link":""
+         }
+      ],
+      "hobbies":[
+         {
+            "name":"Practicing Yoga",
+            "link":""
+         },
+         {
+            "name":"Tennis / Racquet ball enthusiast",
+            "link":""
+         }
+      ]
+   },
+   "contact":{
+      "github":"puneetkhanduri",
+      "twitter":"pzdk",
+      "linkedin":"puneetkhanduri",
+      "facebook":"khanduri.puneet"
+   },
+   "education":{
+      "institutes":[
+         {
+            "title":"Stanford University",
+            "link": "https://www.gsb.stanford.edu/",
+            "loc":"Stanford, CA",
+            "course":"Graduate School of Business: Executive Education",
+            "desc":"",
+            "dates":"2010 – 2010"
+         },
+         {
+            "title":"University of Waterloo",
+            "link": "https://uwaterloo.ca/electrical-computer-engineering/",
+            "loc":"Ontario, Canada",
+            "course":"Bachelor in Applied Science – Computer Engineering (Honors)",
+            "desc":"",
+            "dates":"2002 - 2007"
+         },
+         {
+            "title":"Massachusetts Institute of Technology",
+            "link": "http://web.mit.edu/",
+            "loc":"Cambridge, MA",
+            "course":"Visiting Researcher: Computer Science",
+            "desc":"",
+            "dates":"2006 - 2006"
+         }
+      ]
+   },
+   "experience":[
+      {
+         "fa_class":"fa-spin fa-th-large",
+         "title":"Diffy",
+         "link": "https://github.com/twitter/diffy",
+         "loc":"San Fransisco, CA / New Delhi, India",
+         "dates":"2018 - current",
+         "position":"Co-Founder / CEO",
+         "body":[
+            {
+               "team_desc":"An open source tool that allows developers to catch bugs before they are pushed to production",
+               "duties":[
+                  "More detail coming soon ..."
+               ]
+            }
+         ]
+      },
+      {
+         "fa_class":"fa-twitter",
+         "title":"Twitter",
+         "link": "https://twitter.com/",
+         "loc":"San Fransisco, CA",
+         "dates":"2013 - 2018",
+         "position":"Engineering Lead - Multiple teams",
+         "body":[
+            {
+               "team_name":"Machine Learning & AI Services Lead - Cortex",
+               "team_desc":"Leading the development of machine learning infrastructure and AI services at Twitter",
+               "duties":[
+               ]
+            },
+            {
+               "team_name":"Engineering Head - Twitter India",
+               "team_desc":"Lead a stealth effort mandated directly by the CEO and his staff",
+               "duties":[
+                  "Ensured rapid iterations and aggressive delivery cadence across Engineering, Product, & Design",
+                  "Enabled 8 user studies for 8 different products within a span of 8 months",
+                  "Built an exemplary team with high standards for team work, quality, and velocity"
+               ]
+            },
+            {
+               "team_name":"Staff Engineer & Tech Lead - Effectiveness Frameworks",
+               "team_desc":"Building backend services and software reliability frameworks as a part of the Engineering Effectiveness group at Twitter",
+               "duties":[
+               ]
+            }
+         ]
+      },
+      {
+         "fa_class":"fa-database",
+         "title":"Oracle",
+         "link": "https://www.oracle.com/",
+         "loc":"Redwood Shores, California",
+         "dates":"2010 - 2012",
+         "position":"Senior Software Engineer / Product Manager",
+         "body":[
+            {
+               "team_name":"Container tracking and monitoring",
+               "team_desc":"Served as product manager and software engineer for an satellite-enabled tracking and sensor-based monitoring solution. This required building an extensible web-application that allowed customers to visualize real-time sensor data from multiple devices and analyze historical data by integrating a variety of Oracle products including Oracle Spatial Analytics, Business Intelligence, and Complex Event Processing",
+               "duties":[
+                  "Identification and engagement of customers and potential partner groups and account managers within Oracle",
+                  "Organizing customer demos - was a speaker at Oracle Openworld 2011",
+                  "Developing a real-time asset tracking and monitoring solution using wireless sensor devices"
+               ]
+            }
+         ]
+      },
+      {
+         "fa_class":"fa-sitemap",
+         "title":"Sun Microsystems",
+         "link": "https://www.oracle.com/",
+         "loc":"Menlo Park, CA",
+         "dates":"2007 - 2010",
+         "position":"Senior Hardware Engineer",
+         "body":[
+            {
+               "team_name":"Sun Labs",
+               "team_desc":"Designed data-center switches and network architectures",
+               "duties":[
+                  "Used instruction-level application tracing and trace-driven simulations to estimate application performance",
+                  "Authored four technical reports and one refereed conference paper as lead author",
+                  "Received a patent on a novel switch design"
+               ]
+            }
+         ]
+      }
+   ]
 }

@@ -15,6 +15,7 @@
             [ "shell-scripting", 90 ]
          ],
          "frameworks":[
+            [ "webpack", 70 ],
             [ "react", 60 ],
             [ "react native", 60 ],
             [ "flask", 80 ]
@@ -37,7 +38,6 @@
          ],
          "frameworks":[
             [ "django", 80 ],
-            [ "webpack", 70 ],
             [ "angular", 60 ],
             [ "yeoman", 60 ],
             [ "code-igniter", 50 ],
@@ -52,7 +52,7 @@
          "last":"Khanduri"
       },
       "desc":{
-         "first":"Hacker - Product builder - Weekend runner - Tennis enthusiast",
+         "first":"Hacker - Solutions Architect - Weekend Runner - Tennis Eenthusiast",
          "second":"Currently in San Francisco, CA"
       }
    },
@@ -172,14 +172,16 @@
          "fa_class":"fa-spin fa-th-large",
          "title":"Diffy",
          "link": "https://github.com/twitter/diffy",
-         "loc":"San Fransisco, CA",
+         "loc":"San Fransisco, CA / New Delhi, India",
          "dates":"2018 - current",
          "position":"Co-Founder / CTO",
          "body":[
             {
                "team_desc":"An open source tool that allows developers to catch bugs before they are pushed to production",
                "duties":[
-                  "More detail coming soon ..."
+                  "Define the open core and hosted strategies for Diffy",
+                  "Architect the hosted solution with a focus on generating review insights",
+                  "Evangelize Diffy at conferences"
                ]
             }
          ]

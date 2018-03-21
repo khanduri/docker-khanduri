@@ -5,7 +5,7 @@ var HeaderComponent = React.createClass({
   render: function(){
     var profile = this.props.items;
     return (
-      <div className="intro-body">
+      <div className="intro-body overlay">
           <div className="container">
               <div className="row">
                   <div className="col-md-8 col-md-offset-2">
