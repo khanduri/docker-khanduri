@@ -57,10 +57,11 @@ PROD: www.khanduri.com
 ## Setup
  - `heroku apps:create khanduri --remote heroku-prod`
  - `heroku git:remote -a heroku-prod`
+ - `heroku git:remote -a khanduri`
 
 ## Build
- - `heroku container:push web --remote heroku-prod`
- - `heroku logs --remote heroku-prod`
+ - `heroku container:push web --remote heroku`
+ - `heroku logs --remote heroku`
 
 
 ------------------------------

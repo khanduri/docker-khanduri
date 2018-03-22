@@ -6,9 +6,9 @@
    "learn":{
       "current":{
          "languages":[
-            [ "python", 90 ],
-            [ "javascript", 80 ],
-            [ "scala", 90 ]
+            [ "java", 90 ],
+            [ "scala", 90 ],
+            [ "python", 70]
          ],
          "tools":[
             [ "vim", 90 ],
@@ -16,23 +16,24 @@
             [ "IntelliJ", 90 ]
          ],
          "frameworks":[
-            [ "react", 60 ],
-            [ "play", 80 ]
+            [ "finagle", 90 ],
+            [ "finatra", 90 ],
+            [ "spring", 80 ],
+            [ "tensorflow", 70]
          ]
       },
       "past":{
          "languages":[
             [ "C / C++", 70 ],
-            [ "Java ", 70 ],
-            [ "objective-c", 70 ]
+            [ "Scheme/Lisp", 80]
          ],
          "tools":[
-            [ "eclipse", 60 ],
-            [ "x-code", 60 ]
+            [ "eclipse", 90 ]
          ],
          "frameworks":[
-            [ "code-igniter", 50 ],
-            [ "cake-php", 40 ]
+            [ "android", 70 ],
+            [ "iOS", 50 ],
+            [ "cuda", 60]
          ]
       }
    },
@@ -42,44 +43,36 @@
          "last": "Khanduri"
       },
       "desc":{
-         "first": "Entrepreneur - Polyglot Programmer - Yoga Enthusiast",
+         "first": "Programmer, Entrepreneur, Mentor",
          "second": "Currently in San Francisco, CA"
       }
    },
    "activities":{
       "projects":[
          {
-            "name":"Pulsico: Set future reminders",
-            "keywords": ["python", "flask", "heroku"],
-            "link":"http://pulsico.herokuapp.com/"
+            "name":"Moviehop: Minimize wait time betweem back-to-back shows at the movies",
+            "keywords": ["scala", "anorm", "movies"],
+            "link":""
          },
          {
-            "name":"EZ Apps: iOS apps",
-            "keywords": ["mobile", "objective-c", "consumer apps"],
-            "link":"http://ezapps.herokuapp.com/"
+            "name":"Okaaru: A predecessor to Klout that showed influence scores of you facebook network",
+            "keywords": ["centrality", "betweenness", "consumer apps"],
+            "link":""
          }
       ],
       "groups":[
          {
-            "name":"Asha for Education",
-            "link":""
-         },
-         {
-            "name":"Ekal Vidyalaya",
-            "link":""
-         },
-         {
-            "name":"Engineering Exploration Volunteer",
-            "link":""
+            "name":"Bay Area Waterloo Alumni Network",
+            "link":"https://www.facebook.com/uwaterloosf/"
          }
       ],
       "hobbies":[
          {
-            "name":"Practicing Yoga",
+            "name":"Skiing",
             "link":""
          },
          {
-            "name":"Tennis / Racquet ball enthusiast",
+            "name":"Motorcycles",
             "link":""
          }
       ]
@@ -101,20 +94,27 @@
             "dates":"2010 – 2010"
          },
          {
+            "title":"Massachusetts Institute of Technology",
+            "link": "http://web.mit.edu/",
+            "loc":"Cambridge, MA",
+            "course":"Visiting Researcher: Computer Science & AI Lab",
+            "desc":"Worked on supercomputers and JVM performance alongside PhD students",
+            "dates":"2006 - 2006"
+         },
+         {
             "title":"University of Waterloo",
             "link": "https://uwaterloo.ca/electrical-computer-engineering/",
             "loc":"Ontario, Canada",
             "course":"Bachelor in Applied Science – Computer Engineering (Honors)",
-            "desc":"",
+            "desc":"5-year program with 2 years of integrated work experience over 6 internships and no breaks",
             "dates":"2002 - 2007"
          },
          {
-            "title":"Massachusetts Institute of Technology",
-            "link": "http://web.mit.edu/",
-            "loc":"Cambridge, MA",
-            "course":"Visiting Researcher: Computer Science",
-            "desc":"",
-            "dates":"2006 - 2006"
+            "title":"Indian Institute of Technology, Delhi",
+            "link":"http://www.iitd.ac.in/",
+            "loc":"Delhi, India",
+            "course":"Civil Engineering",
+            "desc":"I spent my first year of engineering here as it was common among all the branches before transferring out to Canada."
          }
       ]
    },
@@ -130,7 +130,7 @@
             {
                "team_desc":"An open source tool that allows developers to catch bugs before they are pushed to production",
                "duties":[
-                  "More detail coming soon ..."
+                  "Customers. Customers. Customers. More detail coming soon ..."
                ]
             }
          ]
@@ -145,7 +145,7 @@
          "body":[
             {
                "team_name":"Machine Learning & AI Services Lead - Cortex",
-               "team_desc":"Leading the development of machine learning infrastructure and AI services at Twitter",
+               "team_desc":"Lead the development of machine learning infrastructure and AI services at Twitter",
                "duties":[
                ]
             },
@@ -160,7 +160,7 @@
             },
             {
                "team_name":"Staff Engineer & Tech Lead - Effectiveness Frameworks",
-               "team_desc":"Building backend services and software reliability frameworks as a part of the Engineering Effectiveness group at Twitter",
+               "team_desc":"Built backend services and software reliability frameworks as a part of the Engineering Effectiveness group at Twitter",
                "duties":[
                ]
             }
