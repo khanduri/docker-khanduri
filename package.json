@@ -1,7 +1,7 @@
 {
   "name": "docker-khanduri",
   "version": "1.0.0",
-  "license" : "MIT",
+  "license": "MIT",
   "repository": "git@github.com:khanduri/docker-khanduri.git",
   "author": "Prashant Khanduri <prashant.khanduri@gmail.com>",
   "scripts": {
@@ -27,6 +27,7 @@
     "webpack-dev-server": "^2.11.1"
   },
   "dependencies": {
+    "font-awesome": "4.5.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
   }

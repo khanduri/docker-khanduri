@@ -31,7 +31,7 @@ var AboutPuneetComponent = React.createClass({
               <h2>About Me</h2>
               <p>Hi there! I'm Puneet Khanduri</p>
               <p>I have done a ton of different things and "full-stack" means something different to me than most other folks.</p>
-              <ul class="about-ul">
+              <ul className="about-ul">
                 <li>I started with designing parts of microprocessors</li>
                 <li>then multi-chip modules using advanced interconnect technologies,</li>
                 <li>shared memory systems spanning entire datacenters,</li>
