@@ -2,9 +2,8 @@ import ReactDOM from 'react-dom';
 
 /* Activities */
 
-var ActivitiesComponent = React.createClass({
-  render: function(){
-    var activities = this.props.items;
+function ActivitiesComponent(props){
+    var activities = props.items;
 
     return (
       <section className="projects">
@@ -36,8 +35,7 @@ var ActivitiesComponent = React.createClass({
         </div>
       </section>
     )
-  }
-});
+}
 
 
 if (info.activities){

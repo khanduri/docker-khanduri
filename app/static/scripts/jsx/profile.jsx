@@ -1,9 +1,8 @@
 import ReactDOM from 'react-dom';
 
 
-var HeaderComponent = React.createClass({
-  render: function(){
-    var profile = this.props.items;
+function HeaderComponent(props){
+    var profile = props.items;
     return (
       <div className="intro-body overlay">
           <div className="container">
@@ -19,19 +18,17 @@ var HeaderComponent = React.createClass({
           </div>
       </div>
     )
-  }
-});
+}
 
-var FooterComponent = React.createClass({
-  render: function(){
-    var profile = this.props.items;
+function FooterComponent(props){
+    var profile = props.items;
     return (
       <div className="container text-center">
         <p>Copyright &copy; { profile.name.first } { profile.name.last } - { new Date().getFullYear() }</p>
       </div>
     )
-  }
-});
+}
+
 if (info.profile){
   ReactDOM.render(<HeaderComponent items={info.profile} />, document.getElementById('header'));
   ReactDOM.render(<FooterComponent items={info.profile} />, document.getElementById('footer'));

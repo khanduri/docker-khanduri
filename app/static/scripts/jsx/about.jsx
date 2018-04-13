@@ -1,8 +1,7 @@
 import ReactDOM from 'react-dom';
 
 /* About */
-var AboutPrashantComponent = React.createClass({
-  render: function(){
+function AboutPrashantComponent() {
     return (
         <section className="content-section text-center about">
           <div className="row">
@@ -19,11 +18,9 @@ var AboutPrashantComponent = React.createClass({
           </div>
         </section>
     )
-  }
-});
+}
 
-var AboutPuneetComponent = React.createClass({
-  render: function(){
+function AboutPuneetComponent(){
     return (
         <section className="content-section text-center about">
           <div className="row">
@@ -47,8 +44,7 @@ var AboutPuneetComponent = React.createClass({
           </div>
         </section>
     )
-  }
-});
+}
 
 if (info.about == 'prashant'){
   ReactDOM.render(<AboutPrashantComponent />, document.getElementById('about'));

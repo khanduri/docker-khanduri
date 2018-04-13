@@ -33,8 +33,6 @@
     <footer><div id='footer'></div></footer>
 
     <script>var info = {{ json_data | tojson }}</script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.7/react.js"></script>
     <script src="{{ url_for('static', filename='dist/bundle.js') }}" type="text/javascript"></script>
 
     <script>

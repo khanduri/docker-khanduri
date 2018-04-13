@@ -1,7 +1,7 @@
 // This library allows us to combine paths easily
 const path = require('path');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
-
+var webpack = require('webpack');
 
 module.exports = {
    entry: path.join(__dirname, './app/static/scripts', 'index.jsx'),
@@ -10,7 +10,7 @@ module.exports = {
       filename: 'bundle.js'
    },
    resolve: {
-      extensions: ['.js', '.jsx']
+     extensions: ['.js', '.jsx']
    },
    module: {
       rules: [
@@ -39,6 +39,10 @@ module.exports = {
       ]
    },
    plugins: [
-    new ExtractTextPlugin({filename:'bundle.css'})
+    new ExtractTextPlugin({filename:'bundle.css'}),
+    new webpack.ProvidePlugin({
+            "React": "react",
+            "ReactDOM": "react-dom",
+        }),
    ]
 };

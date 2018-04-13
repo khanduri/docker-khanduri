@@ -2,10 +2,9 @@ import ReactDOM from 'react-dom';
 
 /* Contact */
 
-var ContactComponent = React.createClass({
-  render: function(){
+function ContactComponent(props){
 
-    var contact = this.props.items;
+    var contact = props.items;
 
     return (
       <section className="container content-section text-center contact">
@@ -22,8 +21,7 @@ var ContactComponent = React.createClass({
         </div>
       </section>
     )
-  }
-});
+}
 
 if (info.contact){
   ReactDOM.render(<ContactComponent items={info.contact}/>, document.getElementById('contact'));

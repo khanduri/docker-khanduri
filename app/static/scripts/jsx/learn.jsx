@@ -2,13 +2,12 @@ import ReactDOM from 'react-dom';
 
 /* Learn */
 
-var ProgressDisplayComponent = React.createClass({
-  render: function(){
-    var title = this.props.title;
-    var current = this.props.items;
+function ProgressDisplayComponent(props){
+    var title = props.title;
+    var current = props.items;
 
    return (
-      <div className="row" key={this.props.key}>
+      <div className="row">
         <h2 className="text-center">{title}</h2>
         <div className="row">
             { Object.keys(current).map(function(category, i){
@@ -23,20 +22,16 @@ var ProgressDisplayComponent = React.createClass({
         </div>
       </div>
     )
-  }
-});
+}
 
-var LearnComponent = React.createClass({
-  render : function(){
-
+function LearnComponent(props){
     var rows = [];
 
-    var current = this.props.items.current;
+    var current = props.items.current;
     rows.push(<ProgressDisplayComponent key={"current_interest"} items={current} title={"Current interest"}/>);
 
-    var past = this.props.items.past;
+    var past = props.items.past;
     rows.push(<ProgressDisplayComponent key={'past_interest'} items={past} title={"In the Past"}/>);
-
 
     return (
       <section className="content-section learn">
@@ -49,8 +44,7 @@ var LearnComponent = React.createClass({
         </div>
       </section>
     )
-  }
-});
+}
 
 if (info.learn){
   ReactDOM.render(<LearnComponent items={info.learn}/>, document.getElementById('learn'));

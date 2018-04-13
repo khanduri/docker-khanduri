@@ -2,12 +2,11 @@ import ReactDOM from 'react-dom';
 
 /* Education */
 
-var EducationDisplayComponent = React.createClass({
-  render : function(){
-
-    var institute = this.props.items;
+function EducationDisplayComponent(props){
+  
+    var institute = props.items;
     return (
-      <li className="timeline-inverted" key={this.props.key}>
+      <li className="timeline-inverted">
         <div className="timeline-badge"><i className="fa fa-graduation-cap"></i></div>
         <div className="timeline-panel">
           <div className="timeline-heading">
@@ -21,15 +20,12 @@ var EducationDisplayComponent = React.createClass({
         </div>
       </li>
     )
-  }
-});
+}
 
-var EducationComponent = React.createClass({
-  render : function(){
-
+function EducationComponent(props){
     var rows = [];
 
-    var education = this.props.items;
+    var education = props.items;
     education.institutes.map(function(institute, i){
       rows.push(<EducationDisplayComponent items={institute} key={"institution_" + i}/>);
     });
@@ -52,8 +48,7 @@ var EducationComponent = React.createClass({
         </div>
       </section>
     )
-  }
-});
+}
 
 if (info.education){
   ReactDOM.render(<EducationComponent items={info.education}/>, document.getElementById('education'));

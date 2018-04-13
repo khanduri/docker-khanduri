@@ -2,20 +2,17 @@ import ReactDOM from 'react-dom';
 
 /* Experience */
 
-var ExperienceDutyDisplayComponent = React.createClass({
+function ExperienceDutyDisplayComponent(props){
 
-  render: function(){
-    var duty = this.props.items;
+    var duty = props.items;
     return (
-      <div key={this.props.key}> - { duty }</div>
+      <div> - { duty }</div>
     )
-  }
-});
+}
 
-var ExperienceContentDisplayComponent = React.createClass({
+function ExperienceContentDisplayComponent(props){
 
-  render: function(){
-    var content = this.props.items;
+    var content = props.items;
 
     var rows = [];
     content.duties.map(function(duty, i){
@@ -28,7 +25,7 @@ var ExperienceContentDisplayComponent = React.createClass({
     }
 
     return (
-      <div className="timeline-body" key={this.props.key}>
+      <div className="timeline-body">
         <br/>
         <div>
         { team_name }
@@ -37,12 +34,10 @@ var ExperienceContentDisplayComponent = React.createClass({
         { rows }
       </div>
     )
-  }
-});
+}
 
-var ExperienceDisplayComponent = React.createClass({
-  render: function(){
-    var work = this.props.items;
+function ExperienceDisplayComponent(props){
+    var work = props.items;
 
     var rows = [];
     work.body.map(function(content, i){
@@ -50,7 +45,7 @@ var ExperienceDisplayComponent = React.createClass({
     });
 
    return (
-      <li className="timeline-inverted" key={this.props.key}>
+      <li className="timeline-inverted">
         <div className="timeline-badge"><i className={"fa " + work.fa_class }></i></div>
         <div className="timeline-panel">
           <div className="timeline-heading">
@@ -66,15 +61,12 @@ var ExperienceDisplayComponent = React.createClass({
       </li>
 
     )
-  }
-});
+}
 
-var ExperienceComponent = React.createClass({
-  render : function(){
-
+function ExperienceComponent(props){
     var rows = [];
 
-    var experiences = this.props.items;
+    var experiences = props.items;
     experiences.map(function(experience, i){
       rows.push(<ExperienceDisplayComponent items={experience} key={'experience_' + i} />);
     });
@@ -97,8 +89,7 @@ var ExperienceComponent = React.createClass({
         </div>
       </section>
     )
-  }
-});
+}
 
 if (info.experience){
   ReactDOM.render(<ExperienceComponent items={info.experience} />, document.getElementById('experience'));

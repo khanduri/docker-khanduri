@@ -1,10 +1,9 @@
 import ReactDOM from 'react-dom';
 
 /* Navigation */
-var NavigationComponent = React.createClass({
-  render: function(){
+function NavigationComponent(props){
 
-    var navigation = this.props.items;
+    var navigation = props.items;
 
     var rows = [];
     navigation.map(function(section, i){
@@ -34,8 +33,8 @@ var NavigationComponent = React.createClass({
         </div>
     </nav>
     )
-  }
-});
+}
+
 if (info.navigation){
   ReactDOM.render(<NavigationComponent items={info.navigation} />, document.getElementById('navigation'));
 }
