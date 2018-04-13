@@ -7,13 +7,15 @@ PROD: www.khanduri.com
  - `virtualenv --no-site-packages venv`
  - `source venv/bin/activate`
  - `pip install -r requirements.txt`
- - `brew install yarn`
- - `yarn init --yes`
- - `yarn add --dev webpack babel-core babel-loader babel-preset-react babel-preset-es2015`
- - `yarn add --dev node-sass css-loader sass-loader style-loader`
- - `yarn add --dev url-loader file-loader`
- - `yarn add react react-dom`
- - `npm install extract-text-webpack-plugin --save-dev`
+ - *** `brew install yarn`
+ - *** `yarn init --yes`
+ - `npm install --save-dev webpack babel-core babel-loader babel-preset-react babel-preset-es2015`
+ - `npm install --save-dev node-sass css-loader sass-loader style-loader`
+ - `npm install --save-dev url-loader file-loader`
+ - `npm install --save-dev react react-dom`
+ - `npm install --save-dev extract-text-webpack-plugin`
+ - `npm install --save-dev bootstrap-sass`
+ - `npm install --save font-awesome bootstrap `
 
 ## Build
  - Local
@@ -96,3 +98,4 @@ PROD: www.khanduri.com
  - `docker ps -a`
  - `docker rm khanduri-01`
  - `docker stop khanduri-01`
+ - `npm install webpack --save-dev`
