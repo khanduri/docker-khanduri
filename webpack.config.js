@@ -39,6 +39,6 @@ module.exports = {
       ]
    },
    plugins: [
-    new ExtractTextPlugin({filename:'bundle.css'}),
+    new ExtractTextPlugin({filename:'bundle.css'})
    ]
 };

@@ -1,7 +1,7 @@
 /*
 DUMMY FILE
 
-Witout this file I get teh following error when building through webpack:
+Without this file I get the following error when building through webpack:
 
 ERROR in multi ./app/static/scripts/index.jsx ./
 Module not found: Error: Can't resolve '/Users/pkrypto/projects/docker-khanduri/' in '/Users/pkrypto/projects/docker-khanduri'
