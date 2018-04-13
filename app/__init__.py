@@ -16,12 +16,12 @@ def home():
 
 
 FILE_MAP = {
-    'opk': ('app/data/opk.json', 'opk'),
-    'madhuri': ('app/data/madhuri.json', 'madhuri'),
-    'puneet': ('app/data/puneet.json', 'puneet'),
-    'parisha': ('app/data/parisha.json', 'parisha'),
-    'sehul': ('app/data/sehul.json', 'sehul'),
-    'prashant': ('app/data/prashant.json', 'prashant'),
+    'opk': 'app/data/opk.json',
+    'madhuri': 'app/data/madhuri.json',
+    'puneet': 'app/data/puneet.json',
+    'parisha': 'app/data/parisha.json',
+    'sehul': 'app/data/sehul.json',
+    'prashant': 'app/data/prashant.json',
 }
 
 
@@ -44,7 +44,8 @@ def member(alias):
             alias = map_alias
             break
 
-    data_file_path, class_name = FILE_MAP.get(alias, (None, None))
+    class_name = alias
+    data_file_path = FILE_MAP.get(class_name)
     app.logger.warning(data_file_path)
     if not data_file_path:
         return render_template('error.html')
