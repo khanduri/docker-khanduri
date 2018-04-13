@@ -200,7 +200,6 @@ a {
   }
 }
 
-
 .content-section {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -211,7 +210,7 @@ a {
   width: 100%;
   padding: 50px 0;
   color: $grayscale-light;
-  background: $grayscale-dark url(../../images/learn-bg.jpg) no-repeat scroll center center;
+  background: $grayscale-dark url(../../images/learn-bg.jpg) 50% 0 no-repeat fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -222,7 +221,7 @@ a {
   width: 100%;
   padding: 50px 0;
   color: $grayscale-light;
-  background: $grayscale-dark url(../../images/education-bg.jpg) no-repeat scroll center center;
+  background: $grayscale-dark url(../../images/education-bg.jpg) 50% 0 no-repeat fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
