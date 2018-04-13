@@ -2,7 +2,27 @@
    "navigation": [
       "about", "learn", "experience", "education", "activities", "contact"
    ],
-   "about": "puneet",
+   "about": [
+      {
+         "type": "text",
+         "content": "Hi there! I'm Puneet Khanduri"
+      },
+      {
+         "type": "list",
+         "title": "I have done a ton of different things and 'full-stack' means something different to me than most other folks.",
+         "content": [
+            "I started with designing parts of microprocessors",
+            "then multi-chip modules using advanced interconnect technologies,",
+            "shared memory systems spanning entire datacenters,",
+            "custom networking protocols,",
+            "embedded applications for small footprint JVMs,",
+            "mobile and web applications,",
+            "large scale distributed systems,",
+            "libraries and tools used by engineers across the world,",
+            "and machine learning."
+         ]
+      }
+   ],
    "learn":{
       "current":{
          "languages":[
