@@ -34,7 +34,7 @@ function EducationComponent(props){
       <section className="education">
         <div className="content-section education-section">
           <div className="row">
-            <div className="col-lg-8 col-lg-offset-1">
+            <div className="col-lg-10 col-lg-offset-1">
               <h2 className="text-center">Education</h2>
 
               <div className="container">

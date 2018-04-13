@@ -75,7 +75,7 @@ function ExperienceComponent(props){
       <section className="experience">
         <div className="content-section experience-section">
           <div className="row">
-            <div className="col-lg-8 col-lg-offset-1">
+            <div className="col-lg-10 col-lg-offset-1">
               <h2 className="text-center">Experience</h2>
 
               <div className="container">
