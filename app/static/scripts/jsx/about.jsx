@@ -12,7 +12,7 @@ function AboutComponentItem(props){
     var rows = [];
 
     aboutItem.content.map(function(listItem, i){
-      rows.push(<li><div className="about-item" dangerouslySetInnerHTML={{__html: listItem }}></div></li>);
+      rows.push(<li key={'about_list_item_'+i} ><div className="about-item" dangerouslySetInnerHTML={{__html: listItem }}></div></li>);
     });
 
     return (
