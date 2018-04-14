@@ -15,7 +15,7 @@ PROD: www.khanduri.com
  - `npm install --save-dev react react-dom`
  - `npm install --save-dev extract-text-webpack-plugin`
  - `npm install --save-dev bootstrap-sass`
- - `npm install --save font-awesome bootstrap `
+ - `npm install --save font-awesome bootstrap jquery`
 
 ## Build
  - Local
@@ -35,7 +35,8 @@ PROD: www.khanduri.com
 ## Build
  - `docker build -t docker-khanduri .`
  - `docker run -d --name khanduri-01 -p 5000:5000 -e PORT=5000 docker-khanduri`
-
+ - DEBUG: `docker rm khanduri-01`
+ - DEBUG: `docker stop khanduri-01`
 
 ------------------------------
 # Stage Push - Docker - Heroku:
@@ -50,7 +51,7 @@ PROD: www.khanduri.com
 
 ## Build
  - `heroku container:push web --remote heroku-staging`
- - `heroku open`
+ - `heroku open --app heroku-staging`
 
 
 ------------------------------

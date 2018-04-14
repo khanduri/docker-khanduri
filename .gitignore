@@ -4,7 +4,7 @@ venv
 
 .idea/*
 
-node_modules/*
+*node_modules*
 
 app/static/bower_components
 app/static/dist
