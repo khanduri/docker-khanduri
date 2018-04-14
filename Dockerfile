@@ -8,6 +8,7 @@ WORKDIR /code
 RUN pip install -r requirements.txt
 
 COPY package.json /code/package.json
+COPY package-lock.json /code/package-lock.json
 WORKDIR /code
 RUN yarn install
 

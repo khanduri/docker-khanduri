@@ -456,3 +456,15 @@ body {
     }
   }
 }
+
+.overlay:before {
+  position: absolute;
+  content:" ";
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  display: block;
+  z-index:0;
+  background-color: $grayscale-badge-01;
+}
